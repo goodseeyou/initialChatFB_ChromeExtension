@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "One-click Kittens",
-  "description": "This extension demonstrates a 'browser action' with kittens.",
+  "name": "Facebook initial chat ranking",
+  "description": "output ranking by initial chat",
   "version": "1.0",
 
   "browser_action": {
@@ -11,5 +11,11 @@
   },
   "permissions": [
     "https://www.facebook.com/"
+  ],
+  "content_scripts":[
+	{
+	"matches":["https://www.facebook.com/*"],
+	"js":["matchesFB.js","jquery-1.10.1.min.js"]
+	}
   ]
 }
