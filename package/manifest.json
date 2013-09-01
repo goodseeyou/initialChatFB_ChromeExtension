@@ -10,12 +10,17 @@
     "default_popup": "popup.html"
   },
   "permissions": [
-    "https://www.facebook.com/"
+    "https://www.facebook.com/",
+	"http://www.cs.nccu.edu.tw/~s9513/*"
   ],
   "content_scripts":[
 	{
 	"matches":["https://www.facebook.com/*"],
 	"js":["matchesFB.js","jquery-1.10.1.min.js"]
+	},
+	{
+	"matches":["http://www.cs.nccu.edu.tw/~s9513/chromeExtensions/match/*"],
+	"js":["matchesCS.js","jquery-1.10.1.min.js"]
 	}
   ]
 }
