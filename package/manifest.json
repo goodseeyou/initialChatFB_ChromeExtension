@@ -7,11 +7,12 @@
 
   "browser_action": {
     "default_icon": "icon.png",
-    "default_popup": "popup.html"
+    "default_popup": "nccupost.html"
   },
   "permissions": [
     "https://www.facebook.com/",
-	"http://www.cs.nccu.edu.tw/~s9513/*"
+	"http://www.cs.nccu.edu.tw/~s9513/*",
+	"http://wa.nccu.edu.tw/*"
   ],
   "content_scripts":[
 	{
